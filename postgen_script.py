@@ -13,7 +13,7 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 def iter_notebooks():
     """Returns notebook files in all subdirectories"""
 
-    return (filename for filename in glob.iglob(ROOT_DIR + '**/**/*.ipynb'))
+    return (filename for filename in glob.iglob(ROOT_DIR + '**/**/*.ipynb', recursive=True))
 
 LINK_COMMENT = "<!--NAVIGATION-->\n"
 
