@@ -1,5 +1,3 @@
 # Machine Learning Challenges
 
-A series of assignements for practicing Machine Learning.
-
-Generated using [nbgrader](https://github.com/jupyter/nbgrader).
+A series of self-correcting activities for practicing your ML skills with Python, NumPy, scikit-learn and Keras.
