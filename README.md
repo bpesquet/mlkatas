@@ -7,7 +7,9 @@
 
 This repository contains a series of self-correcting challenges for practicing your ML skills.
 
-They are used to teach Machine Learning at the [National Engineering School of Cognitics](https://ensc.bordeaux-inp.fr).
+It belongs to the Machine Learning course taught at the [Graduate School of Cognitive Engineering](https://www.bordeaux-inp.fr/en) (ENSC).
+
+[![ENSC logo](ensc-logo.jpg)](https://www.bordeaux-inp.fr/en)
 
 ## How to use the katas
 
