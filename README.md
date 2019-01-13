@@ -13,11 +13,13 @@ It is part of the Machine Learning course taught at the [Graduate School of Cogn
 
 ## Content
 
-|Working with Data|Toy Datasets|
+|Working with Data|Training on Classic Datasets|
 |-|-|
-|[Tensor Management](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/data/Tensor_Management.ipynb)|[Fashion MNIST](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/toy-datasets/Fashion_MNIST.ipynb)
-||[Iris](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/toy-datasets/Iris.ipynb)|
-||[Breast Cancer](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/toy-datasets/Breast_Cancer.ipynb)|||
+||[Iris](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Iris.ipynb)|
+||[Breast Cancer](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Breast_Cancer.ipynb)|||
+||[Boston Housing Prices](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Boston_Housing.ipynb)|||
+||[Reuters News](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Reuters_News.ipynb)|||
+||[CIFAR10](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/CIFAR10.ipynb)|||
 
 ## How to run the notebooks
 
