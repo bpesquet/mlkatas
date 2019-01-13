@@ -13,14 +13,24 @@ It is part of the Machine Learning course taught at the [Graduate School of Cogn
 
 ## Content
 
+### Index by exercise type
+
 |Working with Data|Training on Classic Datasets|
 |-|-|
-|[Tensor Management](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/data/Tensor_Management.ipynb)|[Fashion- MNIST](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Fashion_MNIST.ipynb)
-||[Iris](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Iris.ipynb)|
-||[Breast Cancer](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Breast_Cancer.ipynb)|||
-||[Boston Housing](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Boston_Housing.ipynb)|||
-||[Reuters News](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Reuters_News.ipynb)|||
-||[CIFAR10](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/CIFAR10.ipynb)|||
+|[Tensor Management](data/Tensor_Management.ipynb)|[Fashion- MNIST](classic-datasets/Fashion_MNIST.ipynb)
+||[Iris](classic-datasets/Iris.ipynb)|
+||[Breast Cancer](classic-datasets/Breast_Cancer.ipynb)|||
+||[Boston Housing](classic-datasets/Boston_Housing.ipynb)|||
+||[Reuters News](classic-datasets/Reuters_News.ipynb)|||
+||[CIFAR10](classic-datasets/CIFAR10.ipynb)|||
+
+### Index by dataset type
+
+|Numerical Data|Images|Text|
+|-|-|-|
+|[Iris](classic-datasets/Iris.ipynb)|[Fashion-MNIST]((classic-datasets/Fashion_MNIST.ipynb))|[Reuters News](classic-datasets/Reuters_News.ipynb)|
+|[Breast Cancer](classic-datasets/Breast_Cancer.ipynb)|[CIFAR10](classic-datasets/CIFAR10.ipynb)||
+|[Boston Housing](classic-datasets/Boston_Housing.ipynb)|||
 
 ## How to run the notebooks
 
