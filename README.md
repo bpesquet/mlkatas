@@ -16,8 +16,8 @@ It is part of the Machine Learning course taught at the [Graduate School of Cogn
 |Working with Data|Toy Datasets|
 |-|-|
 |[Tensor Management](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/data/Tensor_Management.ipynb)|[Fashion MNIST](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/toy-datasets/Fashion_MNIST.ipynb)
-||[Iris](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/toy-dataset/Iris.ipynb)|
-||[Breast Cancer](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/toy-dataset/Breast_Cancer.ipynb)|||
+||[Iris](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/toy-datasets/Iris.ipynb)|
+||[Breast Cancer](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/toy-datasets/Breast_Cancer.ipynb)|||
 
 ## How to run the notebooks
 
