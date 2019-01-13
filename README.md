@@ -5,7 +5,7 @@
 ![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-This repository contains a series of exercises for practicing your ML and Deep Learning skills, under the form of self-correcting Jupyter notebooks.
+This repository contains a series of exercises for practicing your ML and Deep Learning skills, under the form of self-correcting Jupyter notebooks. Associated examples can be found in the [Machine Learning Handbook](https://github.com/bpesquet/machine-learning-handbook) repository.
 
 It is part of the Machine Learning course taught at the [Graduate School of Cognitive Engineering](https://www.bordeaux-inp.fr/en) (ENSC).
 
@@ -18,7 +18,7 @@ It is part of the Machine Learning course taught at the [Graduate School of Cogn
 |[Tensor Management](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/data/Tensor_Management.ipynb)|[Fashion- MNIST](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Fashion_MNIST.ipynb)
 ||[Iris](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Iris.ipynb)|
 ||[Breast Cancer](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Breast_Cancer.ipynb)|||
-||[Boston Housing Prices](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Boston_Housing.ipynb)|||
+||[Boston Housing](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Boston_Housing.ipynb)|||
 ||[Reuters News](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Reuters_News.ipynb)|||
 ||[CIFAR10](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/CIFAR10.ipynb)|||
 
