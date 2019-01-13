@@ -15,6 +15,7 @@ It is part of the Machine Learning course taught at the [Graduate School of Cogn
 
 |Working with Data|Training on Classic Datasets|
 |-|-|
+|[Tensor Management](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/data/Tensor_Management.ipynb)|[Fashion- MNIST](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Fashion_MNIST.ipynb)
 ||[Iris](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Iris.ipynb)|
 ||[Breast Cancer](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Breast_Cancer.ipynb)|||
 ||[Boston Housing Prices](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Boston_Housing.ipynb)|||
