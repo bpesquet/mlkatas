@@ -18,7 +18,7 @@ This material was created for the Machine Learning course taught at [ENSC (Gradu
 These katas assert your knowledge of two of the fundamental tools in the PyData ecosystem.
 
 - 🔢 [Tensor Management with NumPy](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/tools/TensorManagement.ipynb)
-- 🐼 [Data Analysis with Pandas](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/tools/DataAnalysis.ipynb)
+- 🐼 [Data Analysis with Pandas](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/tools/DataAnalysis.ipynb)
 
 ## Applying algorithms on classic datasets
 
@@ -27,7 +27,7 @@ These katas make you apply several essential Machine Learning techniques on pre-
 || Numerical Data | Images  | Text |
 |---|---|---|---|
 | Regression | 🏠 [Boston Housing](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/BostonHousing.ipynb) |  |   |
-| Binary Classification | 👩 [Breast Cancer](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/BreastCancer.ipyng) | 🐶 [Dogs vs. Cats](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/DogsVsCats.ipynb) |   |
+| Binary Classification | 👩 [Breast Cancer](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/BreastCancer.ipynb) | 🐶 [Dogs vs. Cats](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/DogsVsCats.ipynb) |   |
 | Multiclass Classification | 🌷 [Iris](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/Iris.ipynb) | 👕 [Fashion-MNIST](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/FashionMNIST.ipynb) <br> ✈️ [CIFAR10](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/CIFAR10.ipynb) | 📠 [Reuters News](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/ReutersNews.ipynb) |
 | Multiclass, Multilabel Classification |  |  |  |
 | Clustering |  |  |  |
