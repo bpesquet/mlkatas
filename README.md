@@ -1,37 +1,45 @@
 # Machine Learning Katas
 
-![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+This repository contains a series of exercises, under the form of self-correcting [Jupyter](https://jupyter.org/) notebooks, for practicing your Machine Learning and Deep Learning skills.
 
-This repository contains a series of exercises for practicing your ML and Deep Learning skills, under the form of self-correcting [Jupyter](https://jupyter.org/) notebooks.
+It is designed to be used hand-in-hand with the following resources:
 
-It is part of the Machine Learning course taught at the [Graduate School of Cognitive Engineering](https://www.bordeaux-inp.fr/en) (ENSC).
+- ⁉️ [Theorical aspects](https://www.bpesquet.fr/slides/ia/) (slides, French only for now).
+- ▶️️ [Practical examples](https://github.com/bpesquet/machine-learning-handbook).
 
-- Associated examples can be found in the [Machine Learning Handbook](https://github.com/bpesquet/machine-learning-handbook) repository.
-- Course slides are only available in [French](https://www.bpesquet.fr/slides/ia/) for now. Désolé!
+## About
+
+This material was created for the Machine Learning course taught at [ENSC (Graduate School of Cognitive Engineering)](https://ensc.bordeaux-inp.fr). It is also used at [ENSEIRB-MATMECA](https://enseirb-matmeca.bordeaux-inp.fr) and [IOGS (Institut d'Optique Graduate School)](https://www.institutoptique.fr).
 
 [![ENSC logo](ensc-logo.jpg)](https://www.bordeaux-inp.fr/en)
 
-## Content
+## Working with data in Python
 
-### Index by exercise type
+These katas assert your knowledge of two of the fundamental tools in the PyData ecosystem.
 
-|Working with Data|Classic Datasets|Kaggle Datasets|
-|-|-|-|
-|[Tensor Management](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/data/Tensor_Management.ipynb)|[Fashion-MNIST](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Fashion_MNIST.ipynb)|[Dogs vs. Cats](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/kaggle-datasets/Dogs_vs_Cats.ipynb)|
-|[Data Analysis](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/data/Data_Analysis.ipynb)|[Iris](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Iris.ipynb)||
-||[Breast Cancer](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Breast_Cancer.ipynb)||
-||[Boston Housing](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Boston_Housing.ipynb)||
-||[Reuters News](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Reuters_News.ipynb)||
-||[CIFAR10](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/CIFAR10.ipynb)||
+- 🔢 [Tensor Management with NumPy](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/tools/TensorManagement.ipynb)
+- 🐼 [Data Analysis with Pandas](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/tools/DataAnalysis.ipynb)
 
-### Index by dataset type
+## Applying algorithms on classic datasets
 
-|Numerical Data|Images|Text|
-|-|-|-|
-|[Iris](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Iris.ipynb)|[Fashion-MNIST](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Fashion_MNIST.ipynb)|[Reuters News](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Reuters_News.ipynb)|
-|[Breast Cancer](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Breast_Cancer.ipynb)|[CIFAR10](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/CIFAR10.ipynb)||
-|[Boston Housing](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/classic-datasets/Boston_Housing.ipynb)|[Dogs vs. Cats](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/kaggle-datasets/Dogs_vs_Cats.ipynb)||
+These katas make you apply several essential Machine Learning techniques on pre-made datasets. Algorithm complexity is hidden (for now!) in two great libraries: [scikit-learn](https://scikit-learn.org) and [Keras](https://keras.io/).
+
+|| Numerical Data | Images  | Text |
+|---|---|---|---|
+| Regression | 🏠 [Boston Housing](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/BostonHousing.ipynb) |  |   |
+| Binary Classification | 👩 [Breast Cancer](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/BreastCancer.ipyng) | 🐶 [Dogs vs. Cats](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/DogsVsCats.ipynb) |   |
+| Multiclass Classification | 🌷 [Iris](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/Iris.ipynb) | 👕 [Fashion-MNIST](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/FashionMNIST.ipynb) <br> ✈️ [CIFAR10](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/CIFAR10.ipynb) | 📠 [Reuters News](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/ReutersNews.ipynb) |
+| Multiclass, Multilabel Classification |  |  |  |
+| Clustering |  |  |  |
+| Anomaly Detection |  |  |  |
+
+## Putting models into production
+
+Soon!
+
+## Implementing algorithms from scratch
+
+Soon!
 
 ## How to run the notebooks
 
