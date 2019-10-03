@@ -1,48 +1,59 @@
+![Python 3.6](https://img.shields.io/badge/Python-3.6-blue.svg)
+
 # Machine Learning Katas
 
-This repository contains a series of exercises, under the form of self-correcting [Jupyter](https://jupyter.org/) notebooks, for practicing your Machine Learning and Deep Learning skills.
+This repository contains a series of exercises (*katas*), with associated theory and examples, for practicing your Machine Learning and Deep Learning skills.
 
-It is designed to be used hand-in-hand with the following resources:
+The katas are written as self-correcting [Jupyter](https://jupyter.org/) notebooks that can be executed either locally or through [Colaboratory](https://colab.research.google.com/) (Google account needed). To do so, open any notebook and click this button: ![Open In Google Colaboratory](https://colab.research.google.com/assets/colab-badge.svg).
 
-- ⁉️ [Theorical aspects](https://www.bpesquet.fr/slides/ia/) (slides, French only for now).
-- ▶️️ [Practical examples](https://github.com/bpesquet/machine-learning-handbook).
+Alternatively, you may clone or download this repository and run a Jupyter notebook server on your local machine.
 
-## About
+> This material is part of the Machine Learning course taught at [ENSC](https://ensc.bordeaux-inp.fr). [ENSEIRB-MATMECA](https://enseirb-matmeca.bordeaux-inp.fr) and [IOGS](https://www.institutoptique.fr). See also [Acknowledgments](ACKNOWLEDGMENTS.md).
 
-This material was created for the Machine Learning course taught at [ENSC (Graduate School of Cognitive Engineering)](https://ensc.bordeaux-inp.fr). It is also used at [ENSEIRB-MATMECA](https://enseirb-matmeca.bordeaux-inp.fr) and [IOGS (Institut d'Optique Graduate School)](https://www.institutoptique.fr).
+## Python and core tools
 
-[![ENSC logo](ensc-logo.jpg)](https://www.bordeaux-inp.fr/en)
+- 📚 [Overview](https://www.bpesquet.fr/en/slides/ai/python-data-science/)
+- ▶️️ Examples
+  - [Python Cheatsheet](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/examples/tools/Python.ipynb)
+  - [NumPy](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/examples/tools/NumPy.ipynb)
+  - [Pandas](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/examples/tools/Pandas.ipynb)
+  - [Matplotlib and Seaborn](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/examples/tools/Matplotlib.ipynb)
+- ⛩ Katas
+  - [Tensor Management with NumPy](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/tools/TensorManagement.ipynb)
+  - [Data Analysis with Pandas](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/tools/DataAnalysis.ipynb)
 
-## Working with data in Python
+## Machine Learning Algorithms
 
-These katas assert your knowledge of two of the fundamental tools in the PyData ecosystem.
+### K-Nearest Neighbors
 
-- 🔢 [Tensor Management with NumPy](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/tools/TensorManagement.ipynb)
-- 🐼 [Data Analysis with Pandas](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/tools/DataAnalysis.ipynb)
+- 📚 [Theory]()
+- ▶️️ Examples [ [scikit-learn]() ]
+- ⛩ Katas
+  - [Diagnose breast tumors](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/KNN_BreastCancer.ipynb)
+  - [Build a phishing detector]()
+  - [Code K-NN from scratch]()
 
-## Applying algorithms on classic datasets
+### Linear Regression
 
-These katas make you apply several essential Machine Learning techniques on pre-made datasets. Algorithm complexity is hidden (for now!) in two great libraries: [scikit-learn](https://scikit-learn.org) and [Keras](https://keras.io/).
+- 📚 [Theory]()
+- ▶️️ Examples [ [scikit-learn]() ]
+- ⛩ Katas
+  - [Predict housing prices](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/LinReg_BostonHousing.ipynb)
 
-|| Numerical Data | Images  | Text |
-|---|---|---|---|
-| Regression | 🏠 [Boston Housing](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/BostonHousing.ipynb) |  |   |
-| Binary Classification | 👩 [Breast Cancer](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/BreastCancer.ipynb) | 🐶 [Dogs vs. Cats](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/DogsVsCats.ipynb) |   |
-| Multiclass Classification | 🌷 [Iris](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/Iris.ipynb) | 👕 [Fashion-MNIST](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/FashionMNIST.ipynb) <br> ✈️ [CIFAR10](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/CIFAR10.ipynb) | 📠 [Reuters News](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/datasets/ReutersNews.ipynb) |
-| Multiclass, Multilabel Classification |  |  |  |
-| Clustering |  |  |  |
-| Anomaly Detection |  |  |  |
+### Dense Neural Networks
 
-## Putting models into production
+- 📚 [Theory]()
+- ▶️️ Examples [ [scikit-learn]() | [TensorFlow/Keras]() | [PyTorch]() ]
+- ⛩️️ Katas
+  - [Associate flowers with their class](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/DNN_Iris.ipynb)
+  - [Classify fashion items](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/DNN_FashionMNIST.ipynb)
+  - [Associate news to topics](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/DNN_ReutersNews.ipynb)
+  - [Code a neural network from scratch]()
 
-Soon!
+### Convolutional Neural Networks
 
-## Implementing algorithms from scratch
-
-Soon!
-
-## How to run the notebooks
-
-- Launch an executable version of a notebook in [Colaboratory](https://colab.research.google.com/) (Google account needed) by opening it and clicking this button: ![Open In Google Colaboratory](https://colab.research.google.com/assets/colab-badge.svg)
-
-- Clone or download this repository and run a [Jupyter](https://jupyter.org/) notebook server on your local machine.
+- 📚 [Theory]()
+- ▶️️ Examples [ [TensorFlow/Keras]() | [PyTorch]() ]
+- ⛩️ Katas
+  - [Classify real-world images](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/CNN_CIFAR10.ipynb)
+  - [Distinguish dogs vs. cats](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/CNN_DogsVsCats.ipynb)
