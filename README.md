@@ -44,4 +44,14 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
   - [Diagnose Breast Tumors](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/KNN_BreastCancer.ipynb)
   - [Code K-NN From Scratch](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/KNN_Scratch.ipynb)
 
+### Linear Regression
+
+- 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/linear-regression/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/linear-regression/) ]
+- ▶️️ Demos
+  - Regression On Planar Data [ [TensorFlow Playground](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=25&networkShape=&seed=0.27079&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=regression&initZero=false&hideText=false&showTestData_hide=false&activation_hide=true&noise_hide=false&discretize_hide=true&dataset_hide=true&batchSize_hide=true&percTrainData_hide=true&numHiddenLayers_hide=true&problem_hide=true) ]
+  - Predict Country Happiness [ [Homemade-ML](https://nbviewer.jupyter.org/github/trekhleb/homemade-machine-learning/blob/master/notebooks/linear_regression/multivariate_linear_regression_demo.ipynb) ]
+- ⛩ Katas
+  - [Predict Housing Prices](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/LinearRegression_BostonHousing.ipynb)
+  - [Code Linear Regression From Scratch](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/LinearRegression_Scratch.ipynb)
+
 (More to come)
