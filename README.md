@@ -19,8 +19,8 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
   - [Pandas](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/tools/Pandas.ipynb)
   - [Matplotlib and Seaborn](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/tools/Matplotlib.ipynb)
 - ⛩ Katas
-  - [Tensor Management](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/tools/TensorManagement.ipynb)
-  - [Data Analysis](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/tools/DataAnalysis.ipynb)
+  - [Tensor Management](notebooks/katas/tools/TensorManagement.ipynb)
+  - [Data Analysis](notebooks/katas/tools/DataAnalysis.ipynb)
 
 ## Machine Learning Workflow
 
@@ -29,8 +29,8 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
   - Data Preprocessing [ [scikit-learn](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/workflow/DataPreprocessing.ipynb) ]
   - Performance Evaluation [ [scikit-learn](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/workflow/PerformanceEvaluation.ipynb) ]
 - ⛩ Katas
-  - [Code Preprocessing Functions From Scratch](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/workflow/PreprocessingFunctions.ipynb)
-  - [Code Classification Metrics From Scratch](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/workflow/ClassificationMetrics.ipynb)
+  - [Code Preprocessing Functions From Scratch](notebooks/katas/workflow/PreprocessingFunctions.ipynb)
+  - [Code Classification Metrics From Scratch](notebooks/katas/workflow/ClassificationMetrics.ipynb)
 
 ## Machine Learning Algorithms
 
@@ -41,8 +41,8 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
   - Classify Planar Data [ [scikit-learn](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/algorithms/KNN_PlanarData.ipynb) ]
   - Classify Fruits [ [scikit-learn](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/algorithms/KNN_Fruits.ipynb) ]
 - ⛩ Katas
-  - [Diagnose Breast Tumors](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/KNN_BreastCancer.ipynb)
-  - [Code K-NN From Scratch](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/KNN_Scratch.ipynb)
+  - [Diagnose Breast Tumors](notebooks/katas/algorithms/KNN_BreastCancer.ipynb)
+  - [Code K-NN From Scratch](notebooks/katas/algorithms/KNN_Scratch.ipynb)
 
 ### Linear Regression
 
@@ -51,7 +51,19 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
   - Regression On Planar Data [ [TensorFlow Playground](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=25&networkShape=&seed=0.27079&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=regression&initZero=false&hideText=false&showTestData_hide=false&activation_hide=true&noise_hide=false&discretize_hide=true&dataset_hide=true&batchSize_hide=true&percTrainData_hide=true&numHiddenLayers_hide=true&problem_hide=true) ]
   - Predict Country Happiness [ [Homemade-ML](https://nbviewer.jupyter.org/github/trekhleb/homemade-machine-learning/blob/master/notebooks/linear_regression/multivariate_linear_regression_demo.ipynb) ]
 - ⛩ Katas
-  - [Predict Housing Prices](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/LinearRegression_BostonHousing.ipynb)
-  - [Code Linear Regression From Scratch](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/katas/algorithms/LinearRegression_Scratch.ipynb)
+  - [Predict Housing Prices](notebooks/katas/algorithms/LinearRegression_BostonHousing.ipynb)
+  - [Code Linear Regression From Scratch](notebooks/katas/algorithms/LinearRegression_Scratch.ipynb)
+
+### Logistic Regression
+
+- 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/logistic-regression/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/logistic-regression/) ]
+- ▶️️ Demos
+  - Classify Planar Data [ [TensorFlow Playground](https://playground.tensorflow.org/#activation=sigmoid&batchSize=10&dataset=gauss&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=&seed=0.61489&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false&numHiddenLayers_hide=true&percTrainData_hide=true&discretize_hide=true&problem_hide=true&activation_hide=true) ]
+- ⛩ Katas
+  - [Associate flowers with their class](notebooks/katas/algorithms/LogisticRegression_Iris.ipynb)
+
+### Neural Networks
+
+- 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/french/slides/ai/neural-networks/index.md) | [slides](https://www.bpesquet.fr/fr/slides/ai/neural-networks/) ]
 
 (More to come)
