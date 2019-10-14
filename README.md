@@ -12,6 +12,8 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
 
 ## Machine Learning Tools
 
+### Base Packages
+
 - 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/python-data-science/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/python-data-science/) ]
 - ▶️️ Demos
   - [Python Cheatsheet](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/tools/Python.ipynb)
@@ -21,6 +23,11 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
 - ⛩ Katas
   - [Tensor Management](notebooks/katas/tools/TensorManagement.ipynb)
   - [Data Analysis](notebooks/katas/tools/DataAnalysis.ipynb)
+
+### Machine Learning Librairies
+
+- 📚 Overview
+  - Keras [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/keras/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/keras/) ]
 
 ## Machine Learning Workflow
 
@@ -64,6 +71,12 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
 
 ### Neural Networks
 
-- 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/french/slides/ai/neural-networks/index.md) | [slides](https://www.bpesquet.fr/fr/slides/ai/neural-networks/) ]
+- 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/neural-networks/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/neural-networks/) ]
+- ▶️️ Demos
+  - Classify planar data [ [Keras](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/algorithms/DNN_PlanarData.ipynb) ]
+  - Tackle overfitting [ [Keras](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/algorithms/DNN_Tuning.ipynb) ]
+- ⛩ Katas
+  - [Classify fashion items](notebooks/katas/algorithms/DNN_FashionMNIST.ipynb)
+  - [Associate news to topics](notebooks/katas/algorithms/DNN_ReutersNews.ipynb)
 
 (More to come)
