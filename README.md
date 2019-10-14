@@ -67,16 +67,16 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
 - ▶️️ Demos
   - Classify Planar Data [ [TensorFlow Playground](https://playground.tensorflow.org/#activation=sigmoid&batchSize=10&dataset=gauss&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=&seed=0.61489&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false&numHiddenLayers_hide=true&percTrainData_hide=true&discretize_hide=true&problem_hide=true&activation_hide=true) ]
 - ⛩ Katas
-  - [Associate flowers with their class](notebooks/katas/algorithms/LogisticRegression_Iris.ipynb)
+  - [Associate Flowers With Their Class](notebooks/katas/algorithms/LogisticRegression_Iris.ipynb)
 
 ### Neural Networks
 
 - 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/neural-networks/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/neural-networks/) ]
 - ▶️️ Demos
-  - Classify planar data [ [Keras](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/algorithms/DNN_PlanarData.ipynb) ]
-  - Tackle overfitting [ [Keras](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/algorithms/DNN_Tuning.ipynb) ]
+  - Classify Planar Data [ [Keras](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/algorithms/DNN_PlanarData.ipynb) ]
+  - Tackle Overfitting [ [Keras](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/algorithms/DNN_Tuning.ipynb) ]
 - ⛩ Katas
-  - [Classify fashion items](notebooks/katas/algorithms/DNN_FashionMNIST.ipynb)
-  - [Associate news to topics](notebooks/katas/algorithms/DNN_ReutersNews.ipynb)
+  - [Classify Fashion Items](notebooks/katas/algorithms/DNN_FashionMNIST.ipynb)
+  - [Associate News To Topics](notebooks/katas/algorithms/DNN_ReutersNews.ipynb)
 
 (More to come)
