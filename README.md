@@ -1,4 +1,4 @@
-![Python 3.6](https://img.shields.io/badge/Python-3.6-blue.svg)
+![Supported Python Versions](https://img.shields.io/badge/Python->=3.6-blue.svg?logo=python&logoColor=white)
 
 # Machine Learning Katas
 
@@ -79,4 +79,13 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
   - [Classify Fashion Items](notebooks/katas/algorithms/DNN_FashionMNIST.ipynb)
   - [Associate News To Topics](notebooks/katas/algorithms/DNN_ReutersNews.ipynb)
 
-(More to come)
+### Ensemble Methods: Decision Trees, Random Forests And Boosting
+
+- 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/ensemble-methods/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/ensemble-methods/) ]
+- ▶️️ Demos
+  - [Classify Flowers With Decision Trees](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/algorithms/DecisionTree_Iris.ipynb)
+- ⛩ Katas
+  - [Tune A Decision Tree](notebooks/katas/algorithms/DecisionTree_Tuning.ipynb)
+  - [Predict Diabetes Evolution](notebooks/katas/algorithms/RandomForest_Diabetes.ipynb)
+  - [Classify Handwritten Digits](notebooks/katas/algorithms/Ensemble_MNIST.ipynb)
+  - [Discover Boosting Libraries](notebooks/katas/algorithms/Boosting_Libraries.ipynb)
