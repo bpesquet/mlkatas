@@ -24,10 +24,22 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
   - [Tensor Management](notebooks/katas/tools/TensorManagement.ipynb)
   - [Data Analysis](notebooks/katas/tools/DataAnalysis.ipynb)
 
-### Machine Learning Librairies
+### Keras
 
-- 📚 Overview
-  - Keras [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/keras/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/keras/) ]
+- 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/keras/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/keras/) ]
+- ▶️️ Demos
+  - [Get Started With TensorBoard](https://www.tensorflow.org/tensorboard/get_started)
+
+### PyTorch
+
+- 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/pytorch/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/pytorch/) ]
+- ▶️️ Demos
+  - [PyTorch In Action](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/tools/PyTorch.ipynb)
+- ⛩ Katas
+  - [PyTorch: A 60 Minutes Blitz](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
+  - [Writing Custom Datasets, DataLoaders and Transforms](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html)
+  - [Visualizing Models, Data, and Training with TensorBoard](https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html)
+  - [Implement Logistic Regression With PyTorch](notebooks/katas/tools/LogisticRegression_PyTorch.ipynb)
 
 ## Machine Learning Workflow
 
