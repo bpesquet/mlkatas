@@ -10,7 +10,7 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
 
 > This material is part of the Machine Learning course taught at [ENSC](https://ensc.bordeaux-inp.fr). [ENSEIRB-MATMECA](https://enseirb-matmeca.bordeaux-inp.fr) and [IOGS](https://www.institutoptique.fr). See also [Acknowledgments](ACKNOWLEDGMENTS.md).
 
-## Machine Learning Tools
+## Tools
 
 ### Base Packages
 
@@ -41,7 +41,7 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
   - [Visualizing Models, Data, and Training with TensorBoard](https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html)
   - [Implement Logistic Regression With PyTorch](notebooks/katas/tools/LogisticRegression_PyTorch.ipynb)
 
-## Machine Learning Workflow
+## Workflow
 
 - 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/ml-fundamentals/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/ml-fundamentals/) ]
 - ▶️️ Demos
@@ -51,7 +51,7 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
   - [Code Preprocessing Functions From Scratch](notebooks/katas/workflow/PreprocessingFunctions.ipynb)
   - [Code Classification Metrics From Scratch](notebooks/katas/workflow/ClassificationMetrics.ipynb)
 
-## Machine Learning Algorithms
+## Algorithms
 
 ### K-Nearest Neighbors
 
@@ -101,3 +101,10 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
   - [Predict Diabetes Evolution](notebooks/katas/algorithms/RandomForest_Diabetes.ipynb)
   - [Classify Handwritten Digits](notebooks/katas/algorithms/Ensemble_MNIST.ipynb)
   - [Discover Boosting Libraries](notebooks/katas/algorithms/Boosting_Libraries.ipynb)
+
+### Convolutional Neural Networks
+
+- 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/convolutional-neural-networks/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/convolutional-neural-networks/) ]
+- ⛩ Katas
+  - Classify Common Images [ [Keras](notebooks/katas/algorithms/CNN_CIFAR10.ipynb) ]
+  - Distinguish Dogs vs. Cats [ [Keras](notebooks/katas/algorithms/CNN_DogsVsCats_Keras.ipynb) | [PyTorch](notebooks/katas/algorithms/CNN_DogsVsCats_PyTorch.ipynb) ]
