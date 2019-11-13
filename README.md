@@ -35,10 +35,10 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
 - 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/pytorch/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/pytorch/) ]
 - ▶️️ Demos
   - [PyTorch In Action](http://nbviewer.jupyter.org/github/bpesquet/machine-learning-katas/blob/master/notebooks/demos/tools/PyTorch.ipynb)
-- ⛩ Katas
   - [PyTorch: A 60 Minutes Blitz](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
   - [Writing Custom Datasets, DataLoaders and Transforms](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html)
   - [Visualizing Models, Data, and Training with TensorBoard](https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html)
+- ⛩ Katas
   - [Implement Logistic Regression With PyTorch](notebooks/katas/tools/LogisticRegression_PyTorch.ipynb)
 
 ## Workflow
@@ -108,3 +108,12 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
 - ⛩ Katas
   - Classify Common Images [ [Keras](notebooks/katas/algorithms/CNN_CIFAR10.ipynb) ]
   - Distinguish Dogs vs. Cats [ [Keras](notebooks/katas/algorithms/CNN_DogsVsCats_Keras.ipynb) | [PyTorch](notebooks/katas/algorithms/CNN_DogsVsCats_PyTorch.ipynb) ]
+
+### Generative Deep Learning
+
+- 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/generative-deep-learning/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/generative-deep-learning/) ]
+- ▶️️ Demos
+  - Neural Style Transfer [ [TF/Keras](https://www.tensorflow.org/tutorials/generative/style_transfer) | [PyTorch](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html) ]
+  - [GAN Playground](https://poloclub.github.io/ganlab/)
+  - Deep Convolutional Generative Adversarial Network [ [TF/Keras](https://www.tensorflow.org/tutorials/generative/dcgan) | [PyTorch](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html) ]
+  - CycleGAN [ [TF/Keras](https://www.tensorflow.org/tutorials/generative/cyclegan) ]
