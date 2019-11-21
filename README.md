@@ -29,6 +29,8 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
 - 📚 Overview [ [source](https://github.com/bpesquet/website/blob/master/content/english/slides/ai/keras/index.md) | [slides](https://www.bpesquet.fr/en/slides/ai/keras/) ]
 - ▶️️ Demos
   - [Get Started With TensorBoard](https://www.tensorflow.org/tensorboard/get_started)
+  - [Save And Load Models](https://www.tensorflow.org/tutorials/keras/save_and_load)
+  - [Deploy Via a REST API](https://blog.keras.io/)
 
 ### PyTorch
 
@@ -38,6 +40,7 @@ Alternatively, you may clone or download this repository and run a Jupyter noteb
   - [PyTorch: A 60 Minutes Blitz](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
   - [Writing Custom Datasets, DataLoaders and Transforms](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html)
   - [Visualizing Models, Data, and Training with TensorBoard](https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html)
+  - [Deploy Via a REST API](https://pytorch.org/tutorials/intermediate/flask_rest_api_tutorial.html)
 - ⛩ Katas
   - [Implement Logistic Regression With PyTorch](notebooks/katas/tools/LogisticRegression_PyTorch.ipynb)
 
