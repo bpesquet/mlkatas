@@ -1,6 +1,8 @@
 # Acknowledgments
 
-The material in this repository is inspired by a large number of sources, from which many ideas and some illustrations were borrowed. The main ones, well worth studying, are listed below. You can find many more resources in my regularly updated [AI bookmarks](http://www.pearltrees.com/bpesquet/ai/id15654228).
+The material in this repository is inspired by a large number of sources.
+
+Here is a non-exhaustive list. Thanks to the authors for sharing their knowledge!
 
 ## Online courses
 
@@ -15,13 +17,6 @@ The material in this repository is inspired by a large number of sources, from w
 - [Hands-on Machine Learning with scikit-learn, Keras & TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/) ([source code](https://github.com/ageron/handson-ml2))
 - [Deep Learning with Python](https://www.manning.com/books/deep-learning-with-python) ([source code](https://github.com/fchollet/deep-learning-with-python-notebooks))
 - [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
-
-## GitHub repositories
-
-- [Homemade Machine Learning](https://github.com/trekhleb/homemade-machine-learning)
-- [PracticalAI](https://github.com/practicalAI/practicalAI)
-- [Data Science From Scratch](https://github.com/joelgrus/data-science-from-scratch)
-- [Deep Learning Models](https://github.com/rasbt/deeplearning-models)
 
 ## Articles
 
