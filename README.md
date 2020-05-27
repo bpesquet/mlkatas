@@ -25,7 +25,7 @@ Only a very basic knowledge of Python is needed to tackle them.
 ### Training models
 
 |Objective|Problem Type|Data Type|Model(s)|
-|-|-|-|-|-|-|-|
+|-|-|-|-|
 |[Diagnose Breast Tumors](notebooks/training_models/breast_cancer.ipynb)|Binary Classification|Tabular|K-Nearest Neighbors|
 |[Predict Housing Prices ](notebooks/training_models/boston_housing.ipynb)|Regression|Tabular|Linear Regression|
 |[Classify Flowers](notebooks/training_models/iris.ipynb)|Multiclass Classification|Tabular|Logistic Regression|
