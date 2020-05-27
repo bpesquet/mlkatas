@@ -14,13 +14,15 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 def iter_notebooks():
     """Returns notebook files in all subdirectories"""
 
-    return (filename for filename in glob.iglob(ROOT_DIR + '**/**/*.ipynb', recursive=True))
+    return (
+        filename for filename in glob.iglob(ROOT_DIR + "**/**/*.ipynb", recursive=True)
+    )
 
 
 LINK_COMMENT = "<!--NAVIGATION-->\n"
 
 COLAB_LINK = """
-<a href="https://colab.research.google.com/github/bpesquet/machine-learning-katas/blob/master/notebooks/{notebook_filename}"><img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a>
+<a href="https://colab.research.google.com/github/bpesquet/machine-learning-katas/blob/master/{notebook_filename}"><img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a>
 """
 
 
@@ -39,7 +41,9 @@ def write_links():
     for nb_name, link in iter_links():
         notebook = nbformat.read(nb_name, as_version=4)
         nb_file = os.path.basename(nb_name)
-        def is_comment(cell): return cell.source.startswith(LINK_COMMENT)
+
+        def is_comment(cell):
+            return cell.source.startswith(LINK_COMMENT)
 
         if is_comment(notebook.cells[0]):
             print("Amending link for {0}".format(nb_file))
@@ -51,5 +55,5 @@ def write_links():
         nbformat.write(notebook, nb_name)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     write_links()
