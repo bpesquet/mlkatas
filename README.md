@@ -28,9 +28,10 @@ Only a very basic knowledge of Python is needed to tackle them.
 |-|-|-|-|-|-|-|
 |[Diagnose Breast Tumors](notebooks/training_models/breast_cancer.ipynb)|Binary Classification|Tabular|K-Nearest Neighbors|
 |[Predict Housing Prices ](notebooks/training_models/boston_housing.ipynb)|Regression|Tabular|Linear Regression|
+|[Predict Heart Disease](notebooks/training_models/heart_disease.ipynb)|Binary Classification|Tabular|Logistic Regression|
 |[Classify Flowers](notebooks/training_models/iris.ipynb)|Multiclass Classification|Tabular|Logistic Regression|
-|[Classify Planar Data](notebooks/katas/training_models/planar_data.ipynb)|Binary Classification|Tabular|Decision Tree|
-|[Predict Diabetes Evolution](notebooks/training_models/diabetes.ipynb)|Regression|Tabular|Random Forest|
+|[Classify Planar Data](notebooks/training_models/planar_data.ipynb)|Binary Classification|Tabular|Decision Tree|
+|[Predict Diabetes Evolution](notebooks/training_models/diabetes.ipynb)|Regression|Tabular|Decision Tree, Neural Network, Random Forest|
 |[Classifiy Handwritten Digits](notebooks/training_models/uci_digits.ipynb)|Multiclass Classification|Image|Ensemble Method|
 |[Classify Fashion Items](notebooks/training_models/fashion_mnist.ipynb)|Multiclass Classification|Image|Neural Network|
 |[Associate News To Topics](notebooks/training_models/reuters_news.ipynb)|Multiclass Classification|Text|Neural Network|
