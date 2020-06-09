@@ -38,6 +38,7 @@ Only a very basic knowledge of Python is needed to tackle them.
 |[Classify Common Images](notebooks/training_models/cifar10.ipynb)|Multiclass Classification|Image|Neural Network, CNN|
 |[Distinguish Dogs vs. Cats (Keras)](notebooks/training_models/dogs_vs_cats_keras.ipynb)|Multiclass Classification|Image|CNN|
 |[Distinguish Dogs vs. Cats (PyTorch)](notebooks/training_models/dogs_vs_cats_pytorch.ipynb)|Multiclass Classification|Image|CNN|
+|[Predict The Weather](notebooks/training_models/jena_weather.ipynb)|Regression|Tabular|RNN|
 
 ## Coding From Scratch
 
