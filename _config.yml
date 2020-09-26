@@ -13,10 +13,6 @@ html:
   use_repository_button: true
   use_issues_button: true
 
-latex:
-  latex_documents:
-    targetname: mlhandbook.tex
-
 repository: 
   url: https://github.com/bpesquet/mlkatas
 
