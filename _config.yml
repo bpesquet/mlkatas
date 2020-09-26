@@ -1,0 +1,28 @@
+# Book settings
+title: Machine Learning Katas
+author: Baptiste Pesquet
+email: baptiste.pesquet@ensc.fr
+logo: logo.png
+
+execute:
+  execute_notebooks: 'off'
+
+html:
+  home_page_in_navbar: false
+  use_edit_page_button: true
+  use_repository_button: true
+  use_issues_button: true
+
+latex:
+  latex_documents:
+    targetname: mlhandbook.tex
+
+repository: 
+  url: https://github.com/bpesquet/mlkatas
+
+launch_buttons:
+  notebook_interface: "classic" # The interface interactive links will activate ["classic", "jupyterlab"]
+  binderhub_url: "https://mybinder.org"
+  colab_url: "https://colab.research.google.com"
+
+exclude_patterns: ["README.md"]

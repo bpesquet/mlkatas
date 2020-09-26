@@ -1,3 +1,6 @@
+# Jupyter Book output
+_build
+
 # TensorBoard logs
 runs/
 

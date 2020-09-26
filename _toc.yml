@@ -1,0 +1,17 @@
+- file: index
+
+- part: Using standard tools
+  chapters:
+  - file: working_with_data/tensor_management
+  - file: working_with_data/data_analysis
+  
+- part: Training models on datasets
+  chapters:
+  - file: training_models/tabular_data
+    sections:
+      - file: training_models/breast_cancer
+      - file: training_models/boston_housing
+  - file: training_models/images
+    sections:
+      - file: training_models/uci_digits
+      
