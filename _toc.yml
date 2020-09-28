@@ -35,3 +35,6 @@
   - file: algorithms/preprocessing_functions
   - file: algorithms/linear_regression
   
+- part: Appendix
+  chapters:
+  - file: appendix/acknowledgments

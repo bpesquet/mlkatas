@@ -9,3 +9,7 @@ Because this website is built with [Jupyter Notebooks](https://jupyter.org/), yo
 ```
 
 This website is constantly evolving, with new content added regularly.
+
+## Acknowledgments
+
+This material is inspired by a large number of sources, from which many ideas and some illustrations were borrowed. More details [here](./appendix/acknowledgments.md).
