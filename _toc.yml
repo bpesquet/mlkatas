@@ -22,6 +22,7 @@
       - file: models/cifar10
       - file: models/dogs_vs_cats_keras
       - file: models/dogs_vs_cats_pytorch
+      - file: models/mnist_vae_pytorch
   - file: models/text
     sections:
       - file: models/reuters_news
