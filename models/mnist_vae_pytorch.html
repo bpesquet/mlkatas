@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate digits (PyTorch) &#8212; Machine Learning Katas</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Text" href="text.html" />
+    <link rel="prev" title="Distinguish dogs vs. cats (PyTorch)" href="dogs_vs_cats_pytorch.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Machine Learning Katas</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <p class="caption">
+ <span class="caption-text">
+  Using tools
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tools/numpy.html">
+   NumPy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tools/pandas.html">
+   pandas
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Training models
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tabular_data.html">
+   Tabular data
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="images.html">
+   Images
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="uci_digits.html">
+     Classify handwritten digits
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fashion_mnist.html">
+     Classify fashion items
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cifar10.html">
+     Classify common images
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dogs_vs_cats_keras.html">
+     Distinguish dogs vs. cats (Keras)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dogs_vs_cats_pytorch.html">
+     Distinguish dogs vs. cats (PyTorch)
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Generate digits (PyTorch)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="text.html">
+   Text
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="time_series.html">
+   Time series
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Coding algorithms
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algorithms/classification_metrics.html">
+   Classification metrics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algorithms/preprocessing_functions.html">
+   Preprocessing functions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algorithms/linear_regression.html">
+   Linear Regression
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/acknowledgments.html">
+   Acknowledgments
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/models/mnist_vae_pytorch.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/bpesquet/mlkatas"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/bpesquet/mlkatas/issues/new?title=Issue%20on%20page%20%2Fmodels/mnist_vae_pytorch.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/bpesquet/mlkatas/edit/master/models/mnist_vae_pytorch.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/bpesquet/mlkatas/master?urlpath=tree/models/mnist_vae_pytorch.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/bpesquet/mlkatas/blob/master/models/mnist_vae_pytorch.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#environment-setup">
+   Environment setup
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-loading">
+   Data loading
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-definition">
+   Model definition
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-training">
+   Model training
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <blockquote>
+<div><p>This is a self-correcting activity generated by <a class="reference external" href="https://nbgrader.readthedocs.io">nbgrader</a>. Fill in any place that says <code class="docutils literal notranslate"><span class="pre">YOUR</span> <span class="pre">CODE</span> <span class="pre">HERE</span></code> or <code class="docutils literal notranslate"><span class="pre">YOUR</span> <span class="pre">ANSWER</span> <span class="pre">HERE</span></code>. Run subsequent cells to check your code.</p>
+</div></blockquote>
+<hr class="docutils" />
+<div class="section" id="generate-digits-pytorch">
+<h1>Generate digits (PyTorch)<a class="headerlink" href="#generate-digits-pytorch" title="Permalink to this headline">¶</a></h1>
+<p>The goal here is to train a VAE to generate handwritten digits.</p>
+<div class="section" id="environment-setup">
+<h2>Environment setup<a class="headerlink" href="#environment-setup" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import ML packages (edit this list if needed)</span>
+<span class="kn">import</span> <span class="nn">torch</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;PyTorch version: </span><span class="si">{</span><span class="n">torch</span><span class="o">.</span><span class="n">__version__</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
+<span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="k">as</span> <span class="nn">F</span>
+<span class="kn">import</span> <span class="nn">torchvision</span>
+<span class="kn">from</span> <span class="nn">torchvision</span> <span class="kn">import</span> <span class="n">transforms</span>
+<span class="kn">from</span> <span class="nn">torchvision.utils</span> <span class="kn">import</span> <span class="n">save_image</span>
+
+<span class="c1"># Device configuration</span>
+<span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s1">&#39;cuda&#39;</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s1">&#39;cpu&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="data-loading">
+<h2>Data loading<a class="headerlink" href="#data-loading" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a directory if not exists</span>
+<span class="n">sample_dir</span> <span class="o">=</span> <span class="s1">&#39;samples&#39;</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">sample_dir</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">sample_dir</span><span class="p">)</span>
+
+<span class="c1"># Hyper-parameters</span>
+<span class="n">image_size</span> <span class="o">=</span> <span class="mi">784</span>
+<span class="n">h_dim</span> <span class="o">=</span> <span class="mi">400</span>
+<span class="n">z_dim</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">num_epochs</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">128</span>
+<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">1e-3</span>
+
+<span class="c1"># MNIST dataset</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">torchvision</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">MNIST</span><span class="p">(</span><span class="n">root</span><span class="o">=</span><span class="s1">&#39;./data&#39;</span><span class="p">,</span>
+                                     <span class="n">train</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                                     <span class="n">transform</span><span class="o">=</span><span class="n">transforms</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">(),</span>
+                                     <span class="n">download</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Data loader</span>
+<span class="n">data_loader</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">DataLoader</span><span class="p">(</span><span class="n">dataset</span><span class="o">=</span><span class="n">dataset</span><span class="p">,</span>
+                                          <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span> 
+                                          <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="model-definition">
+<h2>Model definition<a class="headerlink" href="#model-definition" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># VAE model</span>
+<span class="k">class</span> <span class="nc">VAE</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">image_size</span><span class="o">=</span><span class="mi">784</span><span class="p">,</span> <span class="n">h_dim</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">z_dim</span><span class="o">=</span><span class="mi">20</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">VAE</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">image_size</span><span class="p">,</span> <span class="n">h_dim</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">h_dim</span><span class="p">,</span> <span class="n">z_dim</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc3</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">h_dim</span><span class="p">,</span> <span class="n">z_dim</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc4</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">z_dim</span><span class="p">,</span> <span class="n">h_dim</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc5</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">h_dim</span><span class="p">,</span> <span class="n">image_size</span><span class="p">)</span>
+        
+    <span class="k">def</span> <span class="nf">encode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="n">h</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc1</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc2</span><span class="p">(</span><span class="n">h</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc3</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">reparameterize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">log_var</span><span class="p">):</span>
+        <span class="n">std</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">log_var</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">eps</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn_like</span><span class="p">(</span><span class="n">std</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">mu</span> <span class="o">+</span> <span class="n">eps</span> <span class="o">*</span> <span class="n">std</span>
+
+    <span class="k">def</span> <span class="nf">decode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+        <span class="n">h</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc4</span><span class="p">(</span><span class="n">z</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">F</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc5</span><span class="p">(</span><span class="n">h</span><span class="p">))</span>
+    
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Encode inputs to obtain mean and standard deviation</span>
+<span class="sd">           Sample codings from guassian distribution using mean and std</span>
+<span class="sd">           Returns decoded codings, mean and standard deviation&quot;&quot;&quot;</span>
+        <span class="c1"># YOUR CODE HERE</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="model-training">
+<h2>Model training<a class="headerlink" href="#model-training" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">VAE</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="n">learning_rate</span><span class="p">)</span>
+
+<span class="c1"># Start training</span>
+<span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_epochs</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_loader</span><span class="p">):</span>
+        <span class="c1"># Forward pass</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">image_size</span><span class="p">)</span>
+        <span class="n">x_reconst</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">log_var</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        
+        <span class="c1"># Compute reconstruction loss and kl divergence</span>
+        <span class="c1"># For KL divergence, see Appendix B in VAE paper or http://yunjey47.tistory.com/43</span>
+        <span class="n">reconst_loss</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">binary_cross_entropy</span><span class="p">(</span><span class="n">x_reconst</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">size_average</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">kl_div</span> <span class="o">=</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">torch</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">log_var</span> <span class="o">-</span> <span class="n">mu</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">log_var</span><span class="o">.</span><span class="n">exp</span><span class="p">())</span>
+        
+        <span class="c1"># Backprop and optimize</span>
+        <span class="n">loss</span> <span class="o">=</span> <span class="n">reconst_loss</span> <span class="o">+</span> <span class="n">kl_div</span>
+        <span class="c1"># YOUR CODE HERE</span>
+        
+        <span class="k">if</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Epoch[</span><span class="si">{}</span><span class="s2">/</span><span class="si">{}</span><span class="s2">], Step [</span><span class="si">{}</span><span class="s2">/</span><span class="si">{}</span><span class="s2">], Reconst Loss: </span><span class="si">{:.4f}</span><span class="s2">, KL Div: </span><span class="si">{:.4f}</span><span class="s2">&quot;</span> 
+                   <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epoch</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_epochs</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_loader</span><span class="p">),</span> <span class="n">reconst_loss</span><span class="o">.</span><span class="n">item</span><span class="p">(),</span> <span class="n">kl_div</span><span class="o">.</span><span class="n">item</span><span class="p">()))</span>
+    
+    <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
+        <span class="c1"># Save the sampled images</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">z_dim</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">z</span><span class="p">)</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">)</span>
+        <span class="n">save_image</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sample_dir</span><span class="p">,</span> <span class="s1">&#39;sampled-</span><span class="si">{}</span><span class="s1">.png&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epoch</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span>
+
+        <span class="c1"># Save the reconstructed images</span>
+        <span class="n">out</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">x_concat</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">x</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">),</span> <span class="n">out</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">)],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+        <span class="n">save_image</span><span class="p">(</span><span class="n">x_concat</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sample_dir</span><span class="p">,</span> <span class="s1">&#39;reconst-</span><span class="si">{}</span><span class="s1">.png&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epoch</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./models"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="dogs_vs_cats_pytorch.html" title="previous page">Distinguish dogs vs. cats (PyTorch)</a>
+    <a class='right-next' id="next-link" href="text.html" title="next page">Text</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Baptiste Pesquet<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
