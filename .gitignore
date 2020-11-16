@@ -1,3 +1,6 @@
+# Downloaded datasets
+models/data
+
 # Jupyter Book output
 _build
 
