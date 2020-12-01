@@ -1,3 +1,7 @@
+# Generated output
+fake_*
+real_*
+
 # Downloaded datasets
 models/data
 

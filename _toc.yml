@@ -2,40 +2,41 @@
 
 - part: Using tools
   chapters:
-  - file: tools/numpy
-  - file: tools/pandas
-  
+    - file: tools/numpy
+    - file: tools/pandas
+
 - part: Training models
   chapters:
-  - file: models/tabular_data
-    sections:
-      - file: models/breast_cancer
-      - file: models/boston_housing
-      - file: models/heart_disease
-      - file: models/iris
-      - file: models/planar_data
-      - file: models/diabetes
-  - file: models/images
-    sections:
-      - file: models/uci_digits
-      - file: models/fashion_mnist
-      - file: models/cifar10
-      - file: models/dogs_vs_cats_keras
-      - file: models/dogs_vs_cats_pytorch
-      - file: models/mnist_vae_pytorch
-  - file: models/text
-    sections:
-      - file: models/reuters_news
-  - file: models/time_series
-    sections:
-      - file: models/jena_weather
+    - file: models/tabular_data
+      sections:
+        - file: models/breast_cancer
+        - file: models/boston_housing
+        - file: models/heart_disease
+        - file: models/iris
+        - file: models/planar_data
+        - file: models/diabetes
+    - file: models/images
+      sections:
+        - file: models/uci_digits
+        - file: models/fashion_mnist
+        - file: models/cifar10
+        - file: models/dogs_vs_cats_keras
+        - file: models/dogs_vs_cats_pytorch
+        - file: models/mnist_vae_pytorch
+        - file: models/mnist_gan_pytorch
+    - file: models/text
+      sections:
+        - file: models/reuters_news
+    - file: models/time_series
+      sections:
+        - file: models/jena_weather
 
 - part: Coding algorithms
   chapters:
-  - file: algorithms/classification_metrics
-  - file: algorithms/preprocessing_functions
-  - file: algorithms/linear_regression
-  
+    - file: algorithms/classification_metrics
+    - file: algorithms/preprocessing_functions
+    - file: algorithms/linear_regression
+
 - part: Appendix
   chapters:
-  - file: appendix/acknowledgments
+    - file: appendix/acknowledgments
