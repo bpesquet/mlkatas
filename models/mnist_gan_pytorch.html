@@ -46,6 +46,8 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -512,7 +514,7 @@
 
 <span class="c1"># MNIST dataset</span>
 <span class="n">mnist</span> <span class="o">=</span> <span class="n">torchvision</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">MNIST</span><span class="p">(</span>
-    <span class="n">root</span><span class="o">=</span><span class="s2">&quot;../../data/&quot;</span><span class="p">,</span> <span class="n">train</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">transform</span><span class="p">,</span> <span class="n">download</span><span class="o">=</span><span class="kc">True</span>
+    <span class="n">root</span><span class="o">=</span><span class="s2">&quot;./data/&quot;</span><span class="p">,</span> <span class="n">train</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">transform</span><span class="p">,</span> <span class="n">download</span><span class="o">=</span><span class="kc">True</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -538,8 +540,8 @@
 <h3>Question<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Complete the following code to create a GAN:</p>
 <ul class="simple">
-<li><p>generator must be a dense network with two hidden layers using ReLU as activation functions;</p></li>
-<li><p>discriminator must be a dense network with two hidden layers using leaky ReLU as activation functions.</p></li>
+<li><p>generator must be a dense network with two hidden layers using ReLU as activation functions, and an output layer using tanh;</p></li>
+<li><p>discriminator must be a dense network with two hidden layers using leaky ReLU (with <span class="math notranslate nohighlight">\(\alpha=0.2\)</span>) as activation functions, and an output layer using sigmoid.</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
