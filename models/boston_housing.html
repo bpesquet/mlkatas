@@ -621,7 +621,7 @@
 </div>
 <div class="section" id="id2">
 <h3>Question<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<p>Scale features by standardization while preventing information leakage from the test set.</p>
+<p>Scale features by standardization while preventing information leakage from the test set. This means standardization values (mean and standard deviation) should be computed on the training set only.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
@@ -634,6 +634,10 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mean_train</span> <span class="o">=</span> <span class="n">x_train</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">std_train</span> <span class="o">=</span> <span class="n">x_train</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;mean_train: </span><span class="si">{</span><span class="n">mean_train</span><span class="si">}</span><span class="s1">. std_train: </span><span class="si">{</span><span class="n">std_train</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="n">mean_test</span> <span class="o">=</span> <span class="n">x_test</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">std_test</span> <span class="o">=</span> <span class="n">x_test</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;mean_test: </span><span class="si">{</span><span class="n">mean_test</span><span class="si">}</span><span class="s1">. std_test: </span><span class="si">{</span><span class="n">std_test</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">mean_train</span><span class="p">))</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">**-</span><span class="mi">6</span>
 <span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">std_train</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">**-</span><span class="mi">6</span>
