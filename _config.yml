@@ -5,7 +5,7 @@ email: baptiste.pesquet@ensc.fr
 logo: logo.png
 
 execute:
-  execute_notebooks: 'off'
+  execute_notebooks: "off"
 
 html:
   home_page_in_navbar: false
@@ -13,7 +13,7 @@ html:
   use_repository_button: true
   use_issues_button: true
 
-repository: 
+repository:
   url: https://github.com/bpesquet/mlkatas
 
 launch_buttons:
@@ -21,4 +21,4 @@ launch_buttons:
   binderhub_url: "https://mybinder.org"
   colab_url: "https://colab.research.google.com"
 
-exclude_patterns: ["README.md"]
+exclude_patterns: ["README.md", "algorithms/cartpole.ipynb"]
