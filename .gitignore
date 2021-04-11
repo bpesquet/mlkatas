@@ -11,6 +11,9 @@ _build
 # TensorBoard logs
 runs/
 
+# OpenAI Gym data
+gym-results
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

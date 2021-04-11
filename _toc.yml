@@ -37,6 +37,7 @@
     - file: algorithms/classification_metrics
     - file: algorithms/preprocessing_functions
     - file: algorithms/linear_regression
+    - file: algorithms/rl_cliffworld
 
 - part: Appendix
   chapters:
