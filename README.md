@@ -1,8 +1,8 @@
-![Supported Python Versions](https://img.shields.io/badge/Python->=3.6-blue.svg?logo=python&logoColor=white)
+# ⛩ Machine Learning Katas (archived)
 
-# ⛩ Machine Learning Katas
+> The content of this repository has been merged into the [Machine Learning Handbook](https://github.com/bpesquet/mlhandbook). It is now archived and won't be updated anymore.
 
-This repository contains a series of challenges (*katas*) for practicing your Machine Learning and Deep Learning skills.
+This repository contains a series of challenges (_katas_) for practicing your Machine Learning and Deep Learning skills.
 
 The katas are self-correcting [Jupyter Notebooks](https://jupyter.org/) that can be executed either:
 
