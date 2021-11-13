@@ -3,6 +3,7 @@ title: Machine Learning Katas
 author: Baptiste Pesquet
 email: baptiste.pesquet@ensc.fr
 logo: logo.png
+copyright: "2021"
 
 execute:
   execute_notebooks: "off"
@@ -21,4 +22,4 @@ launch_buttons:
   binderhub_url: "https://mybinder.org"
   colab_url: "https://colab.research.google.com"
 
-exclude_patterns: ["README.md", "algorithms/cartpole.ipynb"]
+exclude_patterns: ["README.md"]
