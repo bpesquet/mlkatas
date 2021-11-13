@@ -1,43 +1,40 @@
 - file: index
 
-- part: Using tools
+- chapters:
+    - url: https://www.bpesquet.fr/mlhandbook
+      title: Machine Learning Hanbook
+
+- part: Handling data
   chapters:
-    - file: tools/numpy
-    - file: tools/pandas
+    - file: data/numpy
+    - file: data/pandas
 
 - part: Training models
   chapters:
-    - file: models/tabular_data
+    - file: training/tabular_data
       sections:
-        - file: models/breast_cancer
-        - file: models/boston_housing
-        - file: models/heart_disease
-        - file: models/iris
-        - file: models/planar_data
-        - file: models/diabetes
-        - file: models/titanic
-    - file: models/images
+        - file: training/breast_cancer
+        - file: training/boston_housing
+        - file: training/heart_disease
+        - file: training/diabetes
+        - file: training/titanic
+    - file: training/images
       sections:
-        - file: models/uci_digits
-        - file: models/fashion_mnist
-        - file: models/cifar10
-        - file: models/dogs_vs_cats_keras
-        - file: models/dogs_vs_cats_pytorch
-        - file: models/mnist_vae_pytorch
-        - file: models/mnist_gan_pytorch
-    - file: models/text
+        - file: training/fashion_mnist
+        - file: training/cifar10
+        - file: training/dogs_vs_cats_keras
+        - file: training/dogs_vs_cats_pytorch
+    - file: training/text
       sections:
-        - file: models/reuters_news
-    - file: models/time_series
+        - file: training/reuters_news
+    - file: training/time_series
       sections:
-        - file: models/jena_weather
+        - file: training/jena_weather
+        - file: training/household
 
 - part: Coding algorithms
   chapters:
-    - file: algorithms/classification_metrics
-    - file: algorithms/preprocessing_functions
-    - file: algorithms/linear_regression
-    - file: algorithms/rl_cliffworld
+    - file: coding/q_learning_cliffworld
 
 - part: Appendix
   chapters:
