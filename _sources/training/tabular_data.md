@@ -1,0 +1,5 @@
+# Tabular data
+
+```{tableofcontents}
+
+```

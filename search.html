@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search &#8212; Machine Learning Katas</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -31,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -43,13 +43,6 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
     <script src="_static/searchtools.js"></script>
     <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -57,7 +50,10 @@
   <script src="searchindex.js" defer></script>
   
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
 
   </head>
@@ -75,6 +71,10 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
       <img src="_static/logo.png" class="logo" alt="logo">
       
       
@@ -84,21 +84,28 @@
 </div><form class="bd-search d-flex align-items-center" action="#" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://www.bpesquet.fr/mlhandbook">
+   Machine Learning Hanbook
+  </a>
+ </li>
+</ul>
+<p class="caption">
  <span class="caption-text">
-  Using tools
+  Handling data
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="tools/numpy.html">
+  <a class="reference internal" href="data/numpy.html">
    NumPy
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="tools/pandas.html">
+  <a class="reference internal" href="data/pandas.html">
    pandas
   </a>
  </li>
@@ -110,7 +117,7 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="models/tabular_data.html">
+  <a class="reference internal" href="training/tabular_data.html">
    Tabular data
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
@@ -120,44 +127,34 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="models/breast_cancer.html">
-     Diagnose breast tumors
+    <a class="reference internal" href="training/breast_cancer.html">
+     Breast cancer
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="models/boston_housing.html">
-     Predict housing prices
+    <a class="reference internal" href="training/boston_housing.html">
+     Boston housing prices
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="models/heart_disease.html">
-     Predict heart disease
+    <a class="reference internal" href="training/heart_disease.html">
+     Heart disease
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="models/iris.html">
-     Associate flowers with their classes
+    <a class="reference internal" href="training/diabetes.html">
+     Diabetes
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="models/planar_data.html">
-     Classify planar data
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="models/diabetes.html">
-     Predict diabetes evolution
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="models/titanic.html">
-     Predict passenger survival
+    <a class="reference internal" href="training/titanic.html">
+     Titanic
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="models/images.html">
+  <a class="reference internal" href="training/images.html">
    Images
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -167,44 +164,29 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="models/uci_digits.html">
-     Classify handwritten digits
+    <a class="reference internal" href="training/fashion_mnist.html">
+     Fashion-MNIST
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="models/fashion_mnist.html">
-     Classify fashion items
+    <a class="reference internal" href="training/cifar10.html">
+     CIFAR10
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="models/cifar10.html">
-     Classify common images
+    <a class="reference internal" href="training/dogs_vs_cats_keras.html">
+     Dogs vs. cats (Keras)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="models/dogs_vs_cats_keras.html">
-     Distinguish dogs vs. cats (Keras)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="models/dogs_vs_cats_pytorch.html">
-     Distinguish dogs vs. cats (PyTorch)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="models/mnist_vae_pytorch.html">
-     Generate handwritten digits with a VAE (PyTorch)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="models/mnist_gan_pytorch.html">
-     Generate handwritten digits with a GAN (PyTorch)
+    <a class="reference internal" href="training/dogs_vs_cats_pytorch.html">
+     Dogs vs. cats (PyTorch)
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="models/text.html">
+  <a class="reference internal" href="training/text.html">
    Text
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
@@ -214,14 +196,14 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="models/reuters_news.html">
-     Classify Reuters news
+    <a class="reference internal" href="training/reuters_news.html">
+     Reuters news
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="models/time_series.html">
+  <a class="reference internal" href="training/time_series.html">
    Time series
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -231,8 +213,13 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="models/jena_weather.html">
-     Forecast the weather
+    <a class="reference internal" href="training/jena_weather.html">
+     Jena weather
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="training/household.html">
+     Household power consumption
     </a>
    </li>
   </ul>
@@ -245,23 +232,8 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="algorithms/classification_metrics.html">
-   Classification metrics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="algorithms/preprocessing_functions.html">
-   Preprocessing functions
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="algorithms/linear_regression.html">
-   Linear Regression
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="algorithms/rl_cliffworld.html">
-   Reinforcement Learning: Cliffworld
+  <a class="reference internal" href="coding/q_learning_cliffworld.html">
+   Q-Learning: Cliffworld
   </a>
  </li>
 </ul>
@@ -374,14 +346,13 @@
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-
-        </div>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -397,8 +368,7 @@
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>
