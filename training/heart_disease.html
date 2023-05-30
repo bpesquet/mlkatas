@@ -38,7 +38,7 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -732,7 +732,6 @@ title="Print to PDF"
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">platform</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Python version: </span><span class="si">{</span><span class="n">platform</span><span class="o">.</span><span class="n">python_version</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="k">assert</span> <span class="n">platform</span><span class="o">.</span><span class="n">python_version_tuple</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="s2">&quot;3&quot;</span><span class="p">,</span> <span class="s2">&quot;6&quot;</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -760,7 +759,18 @@ title="Print to PDF"
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;scikit-learn version: </span><span class="si">{</span><span class="n">sklearn</span><span class="o">.</span><span class="n">__version__</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
 <span class="c1"># You may add other imports here as needed</span>
-<span class="c1"># YOUR CODE HERE</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span><span class="p">,</span> <span class="n">OneHotEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">ColumnTransformer</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">SGDClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">ConfusionMatrixDisplay</span><span class="p">,</span>
+    <span class="n">classification_report</span><span class="p">,</span>
+    <span class="n">RocCurveDisplay</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
 </pre></div>
 </div>
 </div>
@@ -885,9 +895,18 @@ title="Print to PDF"
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print numerical and categorical features</span>
 
-<span class="c1"># YOUR CODE HERE</span>
+<span class="n">num_features</span> <span class="o">=</span> <span class="n">df_x_train</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num_features</span><span class="p">)</span>
 
-<span class="c1"># Print all values for the &quot;thal&quot; feature</span>
+<span class="n">cat_features</span> <span class="o">=</span> <span class="n">df_x_train</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="nb">object</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cat_features</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print distribution for the &quot;thal&quot; feature</span>
 
 <span class="c1"># YOUR CODE HERE</span>
 </pre></div>
@@ -896,7 +915,7 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use pipelines to preprocess data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Preprocess data to have similar scales and only numerical values</span>
 
 <span class="c1"># YOUR CODE HERE</span>
 </pre></div>
@@ -960,7 +979,7 @@ title="Print to PDF"
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot the confusion matrix for a model and a dataset</span>
 <span class="k">def</span> <span class="nf">plot_conf_mat</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="k">with</span> <span class="n">sns</span><span class="o">.</span><span class="n">axes_style</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">):</span>  <span class="c1"># Temporary hide Seaborn grid lines</span>
-        <span class="n">display</span> <span class="o">=</span> <span class="n">plot_confusion_matrix</span><span class="p">(</span>
+        <span class="n">display</span> <span class="o">=</span> <span class="n">ConfusionMatrixDisplay</span><span class="o">.</span><span class="n">from_estimator</span><span class="p">(</span>
             <span class="n">model</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">values_format</span><span class="o">=</span><span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">Blues</span>
         <span class="p">)</span>
 </pre></div>
@@ -987,7 +1006,9 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># YOUR CODE HERE</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot ROC curve for the SGD classifier</span>
+
+<span class="c1"># YOUR CODE HERE</span>
 </pre></div>
 </div>
 </div>
@@ -996,7 +1017,7 @@ title="Print to PDF"
 </div>
 <div class="section" id="bonus">
 <h2>Bonus<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h2>
-<p>Train another classifier and plot ROC curves for both.</p>
+<p>Train another classifier and plot confusion matrices and ROC curves for both.</p>
 </div>
 </div>
 

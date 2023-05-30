@@ -38,7 +38,7 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -693,7 +693,7 @@ title="Print to PDF"
 
 
 <span class="k">def</span> <span class="nf">plot_series</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">x_label</span><span class="o">=</span><span class="s2">&quot;$t$&quot;</span><span class="p">,</span> <span class="n">y_label</span><span class="o">=</span><span class="s2">&quot;$temp(t)$&quot;</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Plot a time series with actual and predicted future values</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Plot a time series with actual and predicted future values</span>
 <span class="sd">    series: vector of shape (time steps, )</span>
 <span class="sd">    y_true: scalar (if only 1 ahead step) or vector of shape (ahead steps,)</span>
 <span class="sd">    y_pred: scalar (if only 1 ahead step) or vector of shape (ahead steps,)&quot;&quot;&quot;</span>
@@ -727,7 +727,7 @@ title="Print to PDF"
 
 
 <span class="k">def</span> <span class="nf">plot_loss</span><span class="p">(</span><span class="n">history</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Plot training loss for a Keras model</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Plot training loss for a Keras model</span>
 <span class="sd">    Takes a Keras History object as parameter&quot;&quot;&quot;</span>
 
     <span class="n">loss</span> <span class="o">=</span> <span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s2">&quot;loss&quot;</span><span class="p">]</span>
@@ -843,7 +843,7 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">prepare_univariate_data</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">start_index</span><span class="p">,</span> <span class="n">end_index</span><span class="p">,</span> <span class="n">history_size</span><span class="p">,</span> <span class="n">target_size</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Create inputs and targets for a window of time defined by start_index and end_index</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create inputs and targets for a window of time defined by start_index and end_index</span>
 <span class="sd">    history_size: number of time steps of the window</span>
 <span class="sd">    target_size: number of steps ahead to be predicted&quot;&quot;&quot;</span>
 

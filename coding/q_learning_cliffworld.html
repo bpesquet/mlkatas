@@ -38,7 +38,7 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -772,7 +772,7 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CliffWorld</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Cliffworld domain for RL.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Cliffworld domain for RL.</span>
 
 <span class="sd">    A simple domain with 4 x 12 = 48 possible discrete states.</span>
 <span class="sd">    Originally from Sutton and Barto.</span>
@@ -797,7 +797,7 @@ title="Print to PDF"
         <span class="bp">self</span><span class="o">.</span><span class="n">reward_sum</span> <span class="o">=</span> <span class="mi">0</span>
 
     <span class="k">def</span> <span class="nf">newstate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Computes the newstate.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Computes the newstate.</span>
 
 <span class="sd">        Takes a state and an action from the agent and computes its next position.</span>
 
@@ -815,7 +815,7 @@ title="Print to PDF"
         <span class="k">return</span> <span class="n">newstate</span>
 
     <span class="k">def</span> <span class="nf">reward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Computes the reward signal for a given state.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Computes the reward signal for a given state.</span>
 
 <span class="sd">        Takes a state and checks if it&#39;s a cliff or just a normal state.</span>
 
@@ -835,7 +835,7 @@ title="Print to PDF"
         <span class="k">return</span> <span class="n">reward</span>
 
     <span class="k">def</span> <span class="nf">is_terminal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Checks if state is terminal.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Checks if state is terminal.</span>
 
 <span class="sd">        If the agent reached its goal or fell off a cliff the episode ends.</span>
 <span class="sd">        Otherwise it will continue.</span>
@@ -854,7 +854,7 @@ title="Print to PDF"
             <span class="k">return</span> <span class="kc">False</span>
 
     <span class="k">def</span> <span class="nf">log_stuff</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Log things for analysis.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Log things for analysis.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">log_dict</span><span class="p">[</span><span class="s2">&quot;visited_states&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[:]</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">log_dict</span><span class="p">[</span><span class="s2">&quot;reward&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">reward_sum</span>
@@ -865,7 +865,7 @@ title="Print to PDF"
         <span class="bp">self</span><span class="o">.</span><span class="n">reward_sum</span> <span class="o">=</span> <span class="mi">0</span>
 
     <span class="k">def</span> <span class="nf">valid_actions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Compute valid actions for given state.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Compute valid actions for given state.&quot;&quot;&quot;</span>
 
         <span class="n">valid_actions</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">state</span><span class="o">.</span><span class="n">m</span> <span class="o">+</span> <span class="n">moves</span><span class="p">[</span><span class="s2">&quot;&gt;&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">m</span><span class="p">,</span> <span class="n">state</span><span class="o">.</span><span class="n">n</span> <span class="o">+</span> <span class="n">moves</span><span class="p">[</span><span class="s2">&quot;&gt;&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">n</span><span class="p">)</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">all_states</span><span class="p">:</span>
@@ -885,7 +885,7 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">RandomAgent</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Just choosing actions at random. Learns nothing.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Just choosing actions at random. Learns nothing.</span>
 
 <span class="sd">    We write this for the purpose of understanding the interface between</span>
 <span class="sd">    agent and domain we later use for the real RL-agent.</span>
@@ -895,12 +895,12 @@ title="Print to PDF"
         <span class="bp">self</span><span class="o">.</span><span class="n">reward_sum</span> <span class="o">=</span> <span class="mi">0</span>
 
     <span class="k">def</span> <span class="nf">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">valid_actions</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Take a random action among valid ones. Returns action.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Take a random action among valid ones. Returns action.&quot;&quot;&quot;</span>
         <span class="c1"># TODO</span>
         <span class="c1"># YOUR CODE HERE</span>
 
     <span class="k">def</span> <span class="nf">learn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">newstate</span><span class="p">,</span> <span class="n">reward</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Never learns anything&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Never learns anything&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">reward_sum</span> <span class="o">+=</span> <span class="n">reward</span>
 </pre></div>
 </div>
@@ -1024,7 +1024,7 @@ So the agent selects her actions <span class="math notranslate nohighlight">\(\e
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">QAgent</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Q-Learning agent.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Q-Learning agent.</span>
 
 <span class="sd">    A value based, off-policy RL-agent.</span>
 <span class="sd">    Uses defaultdict to return 0 for unknown state/action pairs.</span>
@@ -1065,7 +1065,7 @@ So the agent selects her actions <span class="math notranslate nohighlight">\(\e
         <span class="bp">self</span><span class="o">.</span><span class="n">td_list</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># List of TD errors</span>
 
     <span class="k">def</span> <span class="nf">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">valid_actions</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Choose action.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Choose action.</span>
 
 <span class="sd">        Take state tuple and valid actions and choose action.</span>
 <span class="sd">        Action can either be random or greedy to ensure exploration.</span>
@@ -1085,7 +1085,7 @@ So the agent selects her actions <span class="math notranslate nohighlight">\(\e
         <span class="c1"># YOUR CODE HERE</span>
 
     <span class="k">def</span> <span class="nf">learn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">newstate</span><span class="p">,</span> <span class="n">reward</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Compute update of Q-function.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Compute update of Q-function.</span>
 
 <span class="sd">        Update Q-values when reaching new state and receiving reward.</span>
 <span class="sd">        New value equals to the old value + the computed td-error times</span>
@@ -1105,7 +1105,7 @@ So the agent selects her actions <span class="math notranslate nohighlight">\(\e
         <span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">[</span><span class="n">state</span><span class="p">]</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">act_random</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">valid_actions</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Choose index of action from valid actions at random.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Choose index of action from valid actions at random.</span>
 
 <span class="sd">        Called either if epsilon greedy policy returns random</span>
 <span class="sd">        or if there&#39;s no previous knowledge of action values for</span>
@@ -1122,7 +1122,7 @@ So the agent selects her actions <span class="math notranslate nohighlight">\(\e
         <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">valid_actions</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">act_greedy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">valid_actions</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Choose action with the highest Q-value.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Choose action with the highest Q-value.</span>
 
 <span class="sd">        First checks whether the agent previously has executed any actions at all</span>
 <span class="sd">        in the current state. If not it calls the random act_random method.</span>
@@ -1145,7 +1145,7 @@ So the agent selects her actions <span class="math notranslate nohighlight">\(\e
         <span class="k">return</span> <span class="n">chosen_action</span>
 
     <span class="k">def</span> <span class="nf">td_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">newstate</span><span class="p">,</span> <span class="n">reward</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Compute td error to update value dict</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Compute td error to update value dict</span>
 
 <span class="sd">        First checks wether the agent previously as executed any actions at all in</span>
 <span class="sd">        the current state. If not the maximum Q-value for that state defaults to 0.</span>
