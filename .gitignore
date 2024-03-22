@@ -1,3 +1,6 @@
+# macOS folder files
+.DS_Store
+
 # Generated output
 fake_*
 real_*
