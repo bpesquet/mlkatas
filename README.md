@@ -3,6 +3,8 @@
 
 # ⛩ Machine Learning Katas
 
+> This project is being phased out and replaced by [ainotes](https://github.com/bpesquet/ainotes).
+
 This repository contains the source files for the [Machine Learning Katas](https://www.bpesquet.fr/mlkatas), a series of challenges for practicing your Machine Learning and Deep Learning skills.
 
 ## Usage
