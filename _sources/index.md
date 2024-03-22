@@ -2,6 +2,10 @@
 
 This site contains a series of mostly self-correcting challenges (_katas_) for practicing your Machine Learning and Deep Learning skills. The associated textbook can be found [here](https://www.bpesquet.fr/mlhandbook).
 
+```{warning}
+This project is being phased out and replaced by [ainotes](https://bpesquet.fr/ainotes).
+```
+
 This material is inspired by a large number of sources, from which numerous ideas and several illustrations were borrowed. More details [here](./appendix/acknowledgments.md).
 
 ```{admonition} Interactivity
